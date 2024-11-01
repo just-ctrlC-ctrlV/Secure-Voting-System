@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voting Page</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    
+  </head>
+  <body>
+    <div id="head" class="text-center">
+      <h1 class="heading" align="center">Decentralized Voting Using Ethereum Blockchain</h1>
+      <h2 class="heading" align="center">Welcome to Election'2024</h2> 
+      <br/> 
+    </div>
+    <div id="candidate" class="container"> 
+      <h3 class="date heading" align="center"><p>Voting Dates: Nov'1 2024(Fri) - Nov'3 2024(Sun) <span id="dates"></span></p></h3>
+      <table class="table text-center">
+        <tbody id="boxCandidate">
+          <!-- <tr>
+            <th>Joker</th>
+            <th>Bhartiya Janta Party</th>
+            <th>1000</th>
+          </tr>
+          <tr>
+            <th>Batman</th>
+            <th>Indian National Congress</th>
+            <th>600</th>
+          </tr>
+          <tr>
+            <th>Bane</th>
+            <th>Samajwadi Party</th>
+            <th>200</th>
+          </tr>
+          <tr>
+            <th>Ra's al Ghul</th>
+            <th>Aam Aadmi Party</th>
+            <th>100</th>
+          </tr> -->
+          <tr>
+            <th><bold>SELECT</bold></th>
+            <th><bold>NAME</bold></th>
+            <th><bold>PARTY</bold></th>
+            <th><bold>TOTAL VOTES</bold></th>
+          </tr>
+          <tr>
+            <td><input type="radio" name="candidate" id="joker" value="Joker"></td>
+            <td><label for="joker">Joker</label></td>
+            <td>Bhartiya Janta Party</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="candidate" id="batman" value="Batman"></td>
+            <td><label for="batman">Batman</label></td>
+            <td>Indian National Congress</td>
+            <td>600</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="candidate" id="bane" value="Bane"></td>
+            <td><label for="bane">Bane</label></td>
+            <td>Samajwadi Party</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="candidate" id="ras" value="Ra's al Ghul"></td>
+            <td><label for="ras">Ra's al Ghul</label></td>
+            <td>Aam Aadmi Party</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+      <div id="vote">
+        <p>Please select one of the candidates and click the vote button.</p>
+        <button id="voteButton" class="btn btn-primary" onclick="App.vote()" disabled>Vote</button>
+        <div id="msg"></div>
+  
+        <div id="vote-box"></div>
+      </div>
+    </div>
+  
+    <div id="account">
+          <p id="accountAddress" class="text-center"></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="../dist/app.bundle.js" type="module"></script>
+  </body>
+</html>
